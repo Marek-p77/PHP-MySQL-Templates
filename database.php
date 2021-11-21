@@ -1,6 +1,6 @@
 <?php // Šablony pro správu MySQL databází
 
-class database_users { // Správa Uživatelů
+class database { // Správa Uživatelů
 
     function __construct($sql_cmd) { // Konstruktor Objektů
         $this->db_hostname = "x"; // Hostname a port databáze
@@ -74,17 +74,17 @@ class database_users { // Správa Uživatelů
 }
 
 // Příklad Upravení Dat:
-$update = new database_users("UPDATE users SET username='Test' WHERE id=1"); // Vytvoření objektu
+$update = new database("UPDATE users SET username='Test' WHERE id=1"); // Vytvoření objektu
 //$update->db_update(); // Vykonání Funkce
 
 // Příklad Vytvoření Dat:
-$create = new database_users("INSERT INTO `users`(`username`, `password`, `credit`, `rank`) VALUES ('Admin','heslo','0','admin')"); // Vytvoření objektu
+$create = new database("INSERT INTO `users`(`username`, `password`, `credit`, `rank`) VALUES ('Admin','heslo','0','admin')"); // Vytvoření objektu
 //$create->db_create(); // Vykonání Funkce
 
 // Příklad Čtení Dat:
-$read = new database_users("SELECT * FROM users"); // Vytvoření objektu
+$read = new database("SELECT * FROM users"); // Vytvoření objektu
 $read->db_read(); // Vykonání Funkce
 
 // Příklad Mazání Dat
-$delete = new database_users("DELETE FROM users WHERE id=1"); // Vytvoření Objektu
+$delete = new database("DELETE FROM users WHERE id=1"); // Vytvoření Objektu
 //$delete->db_delete(); // Vykonání Funkce
