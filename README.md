@@ -14,7 +14,7 @@ OOP Třída s metodami pro:
 
 Přidávání Řádků:
 - Vytvoření objektu ->  `$create = new database("INSERT INTO 'users'('username', 'password', 'credit', 'rank') VALUES ('Admin','heslo','0','admin')");`
-- Použití metody ->  ``$create->db_create();`
+- Použití metody ->  `$create->db_create();`
 
 Upravování Řádků:
 - Vytvoření objektu ->  `$update = new database("UPDATE users SET username='Test' WHERE id=1");`
