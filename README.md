@@ -7,19 +7,19 @@ OOP Třída s metodami pro:
 - Upravování dat v databázi
 - Mazání dat v databázi
 
-### Použití
+### Příklady Použití
 Čtení:
 - Vytvoření objektu ->  $read = new database("SELECT * FROM users");
 - Použití metody ->  $read->db_read();
 
 Přidávání Řádků:
-- Vytvoření objektu -> 
-- Použití metody ->
+- Vytvoření objektu ->  $create = new database("INSERT INTO `users`(`username`, `password`, `credit`, `rank`) VALUES ('Admin','heslo','0','admin')");
+- Použití metody ->  $create->db_create();
 
 Upravování Řádků:
-- Vytvoření objektu -> 
-- Použití metody ->
+- Vytvoření objektu ->  $update = new database("UPDATE users SET username='Test' WHERE id=1");
+- Použití metody ->  $update->db_update();
 
 Mazání Řádků:
-- Vytvoření objektu -> 
-- Použití metody ->
+- Vytvoření objektu ->  $delete = new database("DELETE FROM users WHERE id=1");
+- Použití metody ->  $delete->db_delete();
