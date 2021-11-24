@@ -9,8 +9,8 @@ OOP Třída s metodami pro:
 
 ### Použití
 Čtení:
-- Vytvoření objektu -> 
-- Použití metody ->
+- Vytvoření objektu ->  $read = new database("SELECT * FROM users");
+- Použití metody ->  $read->db_read();
 
 Přidávání Řádků:
 - Vytvoření objektu -> 
