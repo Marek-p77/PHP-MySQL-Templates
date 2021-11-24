@@ -9,17 +9,17 @@ OOP Třída s metodami pro:
 
 ### Příklady Použití
 Čtení:
-- Vytvoření objektu ->  $read = new database("SELECT * FROM users");
-- Použití metody ->  $read->db_read();
+- Vytvoření objektu ->  `$read = new database("SELECT * FROM users");`
+- Použití metody ->  `$read->db_read();`
 
 Přidávání Řádků:
-- Vytvoření objektu ->  $create = new database("INSERT INTO `users`(`username`, `password`, `credit`, `rank`) VALUES ('Admin','heslo','0','admin')");
-- Použití metody ->  $create->db_create();
+- Vytvoření objektu ->  `$create = new database("INSERT INTO 'users'('username', 'password', 'credit', 'rank') VALUES ('Admin','heslo','0','admin')");`
+- Použití metody ->  ``$create->db_create();`
 
 Upravování Řádků:
-- Vytvoření objektu ->  $update = new database("UPDATE users SET username='Test' WHERE id=1");
-- Použití metody ->  $update->db_update();
+- Vytvoření objektu ->  `$update = new database("UPDATE users SET username='Test' WHERE id=1");`
+- Použití metody ->  `$update->db_update();`
 
 Mazání Řádků:
-- Vytvoření objektu ->  $delete = new database("DELETE FROM users WHERE id=1");
-- Použití metody ->  $delete->db_delete();
+- Vytvoření objektu ->  `$delete = new database("DELETE FROM users WHERE id=1");`
+- Použití metody ->  `$delete->db_delete();`
