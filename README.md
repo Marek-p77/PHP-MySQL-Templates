@@ -7,7 +7,7 @@ OOP Třída s metodami pro:
 - Upravování dat v databázi
 - Mazání dat v databázi
 
-### 🧰️ Příklady Použití
+### 🧰️ Příklady Použití 
 Čtení:
 - Vytvoření objektu ->  `$read = new database("SELECT * FROM users");`
 - Použití metody ->  `$read->db_read();`
