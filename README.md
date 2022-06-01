@@ -23,3 +23,6 @@ Upravování Řádků:
 Mazání Řádků:
 - Vytvoření objektu ->  `$delete = new database("DELETE FROM users WHERE id=1");`
 - Použití metody ->  `$delete->db_delete();`
+
+
+Pro větší bezpečnost doporučuji použít prepared statements -> https://www.php.net/manual/en/mysqli.quickstart.prepared-statements.php
